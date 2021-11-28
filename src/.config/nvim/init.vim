@@ -37,7 +37,11 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'https://github.com/preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 
-Plug 'editorconfig/editorconfig-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'jparise/vim-graphql'
 
 call plug#end()
 
