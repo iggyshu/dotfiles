@@ -16,7 +16,8 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-set number
+" set number
+set relativenumber
 
 filetype on
 filetype plugin on
