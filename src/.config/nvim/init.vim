@@ -25,8 +25,6 @@ filetype indent on
 
 autocmd FileType javascript setlocal softtabstop=2 shiftwidth=2 expandtab nofixendofline
 
-syntax on
-
 call plug#begin()
 
 Plug 'joshdick/onedark.vim'
@@ -45,5 +43,9 @@ Plug 'jparise/vim-graphql'
 
 call plug#end()
 
-" coloscheme NeoSolarized
-
+set background="dark"
+let g:airline_theme='base16_solarized_dark'
+colorscheme NeoSolarized
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors
+syntax on
