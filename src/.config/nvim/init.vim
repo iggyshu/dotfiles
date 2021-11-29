@@ -41,6 +41,8 @@ Plug 'peitalin/vim-jsx-typescript'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'jparise/vim-graphql'
 
+Plug 'pprovost/vim-ps1'
+
 call plug#end()
 
 set background="dark"
