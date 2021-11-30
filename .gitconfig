@@ -1,0 +1,11 @@
+[user]
+    name = "Igors \"Iggy\" Šutovs"
+    email = iggyshu@gmail.com
+[core]
+    autocrlf = input
+[difftool]
+    prompt = true
+[diff]
+    tool = nvimdiff
+[difftool "nvimdiff"]
+    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
