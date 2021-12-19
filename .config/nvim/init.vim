@@ -1,3 +1,4 @@
+set hidden
 set linebreak
 set showbreak=+++
 set textwidth=100
@@ -18,8 +19,10 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-" set number
 set relativenumber
+set number
+
+set list
 
 syntax enable
 
@@ -37,12 +40,13 @@ set path+=**
 " Display all matching files when we tab complete
 set wildmenu
 
+" Exit terminal with Esc
+tnoremap <Esc> <C-\><C-n>
+
 " PLUGINS
 call plug#begin()
 
-Plug 'joshdick/onedark.vim'
-Plug 'iCyMind/NeoSolarized'
-Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', {'as':'dracula'}
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -91,4 +95,4 @@ endif
 
 let g:airline_theme='base16_gruvbox_dark_medium'
 set background=dark
-colorscheme gruvbox
+colorscheme dracula
