@@ -93,6 +93,6 @@ if (empty($TMUX))
   endif
 endif
 
-let g:airline_theme='base16_gruvbox_dark_medium'
+let g:airline_theme='base16_dracula'
 set background=dark
 colorscheme dracula
