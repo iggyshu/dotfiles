@@ -1,0 +1,23 @@
+
+# Font configuration (changes require restart)
+font:
+  # The normal (roman) font face to use.
+  # Style can be specified to pick a specific face.
+  normal:
+    family: "Fira Code"
+    # style: Retina
+
+  # The bold font face
+  bold:
+    style: Medium
+    family: "Fira Code"
+
+  # The italic font face
+  italic:
+    style: "Light Italic"
+    # style: "Light Oblique"
+    family: "Fira Code"
+    # style: "Medium Italic"
+
+  # Point size of the font
+  size: 13.0
