@@ -64,6 +64,9 @@ Plug 'pprovost/vim-ps1'
 Plug 'zchee/deoplete-jedi'
 Plug 'jiangmiao/auto-pairs'
 
+" Use release branch (recommend)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
