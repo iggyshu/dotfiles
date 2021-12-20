@@ -6,7 +6,7 @@
 
 - link:
     ~/.dotfiles: ''
-    ~/.config/alacritty: alacritty.yml
+    #    ~/.config/alacritty: alacritty
     ~/.config/kitty: kitty
     ~/.config/nvim: nvim
 
