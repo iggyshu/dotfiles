@@ -1,7 +1,7 @@
 # On Windows put this file to 
 
 windows:
-  decorations: buttonless
+  decorations: none
 # Font configuration (changes require restart)
 font:
   # The normal (roman) font face to use.
