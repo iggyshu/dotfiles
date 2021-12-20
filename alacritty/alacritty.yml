@@ -1,22 +1,25 @@
+# On Windows put this file to 
 
+windows:
+  decorations: buttonless
 # Font configuration (changes require restart)
 font:
   # The normal (roman) font face to use.
   # Style can be specified to pick a specific face.
   normal:
-    family: "Fira Code"
+    family: "Fira Code Retina"
     # style: Retina
 
   # The bold font face
   bold:
     style: Medium
-    family: "Fira Code"
+    family: "Fira Code Retina"
 
   # The italic font face
   italic:
     style: "Light Italic"
     # style: "Light Oblique"
-    family: "Fira Code"
+    family: "Fira Code Retina"
     # style: "Medium Italic"
 
   # Point size of the font
@@ -64,7 +67,7 @@ colors:
     background: None
   selection:
     text: CellForeground
-    background: '#44475a'
+    ackground: '#44475a'
   normal:
     black: '#21222c'
     red: '#ff5555'
