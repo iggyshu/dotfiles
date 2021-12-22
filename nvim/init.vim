@@ -1,31 +1,24 @@
-set hidden
-set linebreak
-set showbreak=+++
-set textwidth=100
-set showmatch
-set visualbell
-
+set autoindent
 set colorcolumn=80
-
+set expandtab
+set hidden
 set hlsearch
-set smartcase
 set ignorecase
 set incsearch
-
-set autoindent
+set linebreak
+set list
+set number
+set relativenumber
+set shiftwidth=4
+set showbreak=+++
+set showmatch
+set smartcase
 set smartindent
 set smarttab
-set shiftwidth=4
 set softtabstop=4
-set expandtab
-
-set relativenumber
-set number
-
-set list
-
+set textwidth=100
+set visualbell
 syntax enable
-
 filetype on
 filetype plugin on
 filetype indent on
@@ -47,27 +40,21 @@ tnoremap <Esc> <C-\><C-n>
 call plug#begin()
 
 Plug 'dracula/vim', {'as':'dracula'}
-
+Plug 'editorconfig/editorconfig-vim'
+Plug 'https://github.com/preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'jiangmiao/auto-pairs'
+Plug 'jparise/vim-graphql'
+Plug 'leafgarland/typescript-vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'pangloss/vim-javascript'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'pprovost/vim-ps1'
+Plug 'sheerun/vim-polyglot'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
-Plug 'https://github.com/preservim/nerdtree', { 'on': 'NERDTreeToggle' }
-
-Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-Plug 'jparise/vim-graphql'
-
-Plug 'pprovost/vim-ps1'
-
-Plug 'zchee/deoplete-jedi'
-Plug 'jiangmiao/auto-pairs'
-
-" Use release branch (recommend)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 Plug 'voldikss/vim-floaterm'
+Plug 'zchee/deoplete-jedi'
 
 let g:floaterm_keymap_toggle = '<F1>'
 let g:floaterm_keymap_next   = '<F2>'
