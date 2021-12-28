@@ -16,6 +16,7 @@ set smartcase
 set smartindent
 set smarttab
 set softtabstop=4
+" set spell
 set textwidth=100
 set visualbell
 syntax enable
@@ -32,62 +33,14 @@ set wildmenu
 " PLUGINS
 call plug#begin()
 
-Plug 'dracula/vim', {'as':'dracula'}
-Plug 'editorconfig/editorconfig-vim'
-Plug 'https://github.com/preservim/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'jiangmiao/auto-pairs'
-Plug 'jparise/vim-graphql'
-Plug 'leafgarland/typescript-vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'pangloss/vim-javascript'
-Plug 'peitalin/vim-jsx-typescript'
-Plug 'pprovost/vim-ps1'
-Plug 'sheerun/vim-polyglot'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'voldikss/vim-floaterm'
-Plug 'zchee/deoplete-jedi'
-
-let g:floaterm_keymap_toggle = '<F1>'
-let g:floaterm_keymap_next   = '<F2>'
-let g:floaterm_keymap_prev   = '<F3>'
-let g:floaterm_keymap_new    = '<F4>'
-
-let g:floaterm_gitcommit='floaterm'
-let g:floaterm_autoinsert=1
-let g:floaterm_width=0.8
-let g:floaterm_height=0.8
-let g:floaterm_wintitle=0
-let g:floaterm_autoclose=1
-
-augroup FloatermCustomisations
-    autocmd!
-    autocmd ColorScheme * highlight FloatermBorder guibg=none
-augroup END
-
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-" let g:deoplete#enable_at_startup = 1
-
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? coc#_select_confirm() :
-      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-let g:coc_snippet_next = '<tab>'
+source ~/.config/nvim/plugins/airline.vim
+source ~/.config/nvim/plugins/coc.vim
+source ~/.config/nvim/plugins/commentary.vim
+source ~/.config/nvim/plugins/dracula.vim
+source ~/.config/nvim/plugins/editorconfig.vim
+source ~/.config/nvim/plugins/floaterm.vim
+source ~/.config/nvim/plugins/nerdtree.vim
+source ~/.config/nvim/plugins/polyglot.vim
 
 call plug#end()
 
@@ -109,6 +62,5 @@ if (empty($TMUX))
   endif
 endif
 
-let g:airline_theme='base16_dracula'
 set background=dark
 colorscheme dracula
