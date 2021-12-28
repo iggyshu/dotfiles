@@ -23,18 +23,11 @@ filetype on
 filetype plugin on
 filetype indent on
 
-autocmd FileType typescript setlocal softtabstop=2 shiftwidth=2 expandtab nofixendofline
-autocmd FileType javascript setlocal softtabstop=2 shiftwidth=2 expandtab nofixendofline
-autocmd FileType css setlocal softtabstop=2 shiftwidth=2 expandtab nofixendofline
-
 " Search down into subfolders
 " Provides tab-completion for all file-related tasks
 set path+=**
 " Display all matching files when we tab complete
 set wildmenu
-
-" Exit terminal with Esc
-tnoremap <Esc> <C-\><C-n>
 
 " PLUGINS
 call plug#begin()
