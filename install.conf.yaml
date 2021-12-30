@@ -7,6 +7,7 @@
 - link:
     ~/.dotfiles: ''
     #    ~/.config/alacritty: alacritty
+    ~/.gitconfig: gitconfig
     ~/.config/kitty: kitty
     ~/.config/nvim: nvim
     ~/.tmux: tmux
@@ -14,3 +15,5 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [~/.tmux/plugins/tpm/scripts/install_plugins.sh >/dev/null 2>&1, Installing tmux plugins]
+  - ["nvim +PlugUpdate +PlugClean! +qa", Installing and updating plugins]

@@ -1,0 +1,39 @@
+[alias]
+	a = add
+
+	b = branch
+
+	c = commit
+
+	co = checkout
+	cob = checkout -b
+
+	d = diff
+
+	l = log
+
+	s = status --short --branch
+
+[core]
+	editor = nvim
+
+[diff]
+	tool = nvimdiff
+
+[fetch]
+	prune = true
+
+[help]
+	autocorrect = 20
+
+[delta]
+	line-numbers = true
+	syntax-theme = Dracula
+	plus-style = "syntax #2A363B"
+  plus-emph-style = "syntax #2D4E45"
+  minus-style = "syntax #3B2C37"
+  minus-emph-style = "syntax #613038"
+
+[init]
+	defaultBranch = main
+
