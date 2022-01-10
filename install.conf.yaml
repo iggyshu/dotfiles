@@ -6,7 +6,11 @@
 
 - link:
     ~/.dotfiles: ''
+    #    Alacritty
+    #    macOS / Linux:
     #    ~/.config/alacritty: alacritty
+    #    Windows:
+    #    %USERPROFILE%\AppData\Roaming\alacritty: alacritty
     ~/.gitconfig: gitconfig
     ~/.config/kitty: kitty
     ~/.config/nvim: nvim
