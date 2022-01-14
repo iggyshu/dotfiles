@@ -30,6 +30,8 @@ set path+=**
 " Display all matching files when we tab complete
 set wildmenu
 
+let mapleader = "\<space>"
+
 " PLUGINS
 call plug#begin()
 
@@ -39,6 +41,7 @@ source ~/.config/nvim/plugins/commentary.vim
 source ~/.config/nvim/plugins/dracula.vim
 source ~/.config/nvim/plugins/editorconfig.vim
 source ~/.config/nvim/plugins/floaterm.vim
+source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/polyglot.vim
 
