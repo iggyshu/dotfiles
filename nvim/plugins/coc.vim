@@ -3,6 +3,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = [
     \ '@yaegassy/coc-ansible',
     \ 'coc-css',
+    \ 'coc-go',
     \ 'coc-eslint',
     \ 'coc-html',
     \ 'coc-json',
